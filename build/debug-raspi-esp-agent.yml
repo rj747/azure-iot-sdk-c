@@ -7,6 +7,7 @@ jobs:
   steps:
   - script: |
       cd $(Build.SourcesDirectory)/build_all/arduino
+      echo "running python script now"
       python3 debug-raspi-agent.py
     failOnStderr: true
     displayName: 'use python sys.exit(1)'
