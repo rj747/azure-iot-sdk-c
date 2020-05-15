@@ -1,0 +1,11 @@
+
+
+jobs:
+- job: test_esp8266
+  pool:
+      name: devicelab-03
+  steps:
+  - script: |
+      #copy example and platform.local.txts to their correct locations
+      
+    displayName: 'use python sys.exit(1)'
