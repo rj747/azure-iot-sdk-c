@@ -6,6 +6,7 @@ jobs:
       name: devicelab-03
   steps:
   - script: |
-      #copy example and platform.local.txts to their correct locations
-      
+      cd $(Build.SourcesDirectory)/build_all/arduino
+      python3 debug-raspi-agent.py
+    failOnStderr: true
     displayName: 'use python sys.exit(1)'
